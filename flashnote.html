@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Flashnote - アプリ紹介と使い方</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="index.html#works">作品一覧</a>
+			<a href="index.html#about">プロフィール</a>
+			<a href="index.html#contact">お問い合わせ</a>
+		</nav>
+	</header>
+	<div class="container">
+		<section>
+			<h2>Flashnoteとは？</h2>
+			<p>
+				Flashnoteは、効率的な学習をサポートするフラッシュカードアプリです。<br>
+				シンプルで直感的なインターフェースにより、誰でも簡単に暗記カードを作成・管理できます。<br>
+				クラウド同期機能により、複数デバイス間でカードを共有可能です。<br>
+				現在、App StoreおよびGitHub(Windows版)で無料配布中です。<br>
+				Google Play版も近日公開予定です。
+			</p>
+		</section>
+		<section>
+			<h2>ダウンロード</h2>
+			<p>
+				<a
+					href="https://apps.apple.com/us/app/%E3%83%95%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%83%8E%E3%83%BC%E3%83%88-%E6%9A%97%E8%A8%98%E3%82%A2%E3%83%97%E3%83%AA/id6745518841"><img
+						src="img/flashnote/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg" alt="App Storeでダウンロード"
+						style="width: 200px; height: auto;" /></a>
+				<a href="https://github.com/winmac924/Flashnote_MAUI/releases/download/v2.3.2/Flashnote_MAUI.exe"><img
+						src="img/flashnote/GitHub_Logo.png" alt="" style="width: 200px; height: auto;"></a><br>
+			<ul>
+				<h3>「Flashnote_MAUI.exeは一般的にダウンロードされていません」と表示される</h3>
+				<li>ポップアップの「・・・」をクリックする。</li>
+				<li>「保存」を選択</li>
+				<li>「詳細表示」を選択</li>
+				<li>「保持する」を選択</li>
+			</ul>
+		</section>
+		<section>
+			<h2>主な特徴</h2>
+			<ul>
+				<li>カードの作成・編集が簡単</li>
+				<li>フォルダでカードを整理可能</li>
+				<li>検索機能で素早くカードを見つける</li>
+				<li>クラウド同期でデバイス間のデータ共有</li>
+				<li>オフラインでも使用可能</li>
+				<li>無料で利用可能</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>使い方</h2>
+			<div class="platform-toggle" role="tablist" aria-label="プラットフォーム切替">
+				<button class="platform-btn active" data-platform="windows" aria-pressed="true">Windows版</button>
+				<button class="platform-btn" data-platform="ios" aria-pressed="false">iOS版</button>
+			</div>
+			<div class="platform-contents">
+				<article class="platform-content" data-platform="windows">
+					<h3>Windows版 の使い方</h3>
+					<h4>ノートの新規作成</h4>
+					<ol>
+						<li>アプリを起動して、左下の「+」ボタンからノートを作成します。</li>
+						<li>ノートにタイトルを付けて、「OK」ボタンを押します。</li>
+
+						<li>クラウド同期を有効にする場合は、設定からサインインしてください。</li>
+						<li>検索バーやフォルダ機能でカードを整理・検索できます。</li>
+					</ol>
+					<h4>カードの追加</h4>
+
+					<ol>
+						<h5>基本・穴埋めカード作成</h5>
+						<li>カードを作成するには表・裏にテキストを入力します。<br>裏面の入力をスキップすることができます。</li>
+						<li>穴埋めカードを作成する際は「（）」ボタンを押すか、<code>CTRL+K</code>を押します。<br>
+							手入力をする場合は<code>&lt;&lt;blank|穴抜きしたい文字&gt;&gt;</code>を入力します。</li>
+						<li>必要に応じて画像を追加できます。</li>
+						<li>「保存」ボタンをクリックしてカードを保存します。</li>
+					</ol>
+					<ol>
+						<h5>文字装飾</h5>
+						<li>
+							文字装飾には以下のマークダウン記法を使用します。<br>
+							これらにはすべてショートカットが割り当てられています。(後述)<br>
+							<ul>
+								<li><code>**太字**</code> → <strong>太字</strong></li>
+								<li><code>{{red|赤字}}</code> → <span style="color: red;">赤字</span></li>
+								<li><code>{{blue|青字}}</code> → <span style="color: blue;">青字</span></li>
+								<li><code>{{green|緑字}}</code> → <span style="color: green;">緑字</span></li>
+								<li><code>{{yellow|黄字}}</code> → <span style="color: yellow;">黄字</span></li>
+								<li><code>{{purple|紫字}}</code> → <span style="color: purple;">紫字</span></li>
+								<li><code>{{orange|橙字}}</code> → <span style="color: orange;">橙字</span></li>
+								<li><code>x^2^^</code> → x<span style="font-size: 0.7em; vertical-align: super;">2</span></li>
+								<li><code>CO~~2~~</code> → CO<span style="font-size: 0.7em; vertical-align: sub;">2</span></li>
+								<li><code>&lt;&lt;blank|穴抜きしたい文字&gt;&gt;</code> → 裏面表示前：()、解答表示押下後：（穴抜きしたい文字）</li>
+							</ul>
+						</li>
+					</ol>
+				</article>
+				<article class="platform-content hidden" data-platform="ios">
+					<h3>iOS版 の使い方</h3>
+					<ol>
+					</ol>
+				</article>
+			</div>
+
+			<script>
+				// Platform toggle: switches between Windows and iOS instructions and remembers choice in localStorage
+				(function () {
+					const KEY = 'flashnotePlatform';
+					const buttons = document.querySelectorAll('.platform-btn');
+					const contents = document.querySelectorAll('.platform-content');
+
+					function setPlatform(platform) {
+						buttons.forEach(btn => {
+							const isActive = btn.dataset.platform === platform;
+							btn.classList.toggle('active', isActive);
+							btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+						});
+						contents.forEach(c => {
+							c.classList.toggle('hidden', c.dataset.platform !== platform);
+						});
+						try { localStorage.setItem(KEY, platform); } catch (e) { }
+					}
+
+					buttons.forEach(btn => {
+						btn.addEventListener('click', () => setPlatform(btn.dataset.platform));
+						btn.addEventListener('keydown', (e) => {
+							if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+								e.preventDefault();
+								const next = e.key === 'ArrowRight' ? btn.nextElementSibling : btn.previousElementSibling;
+								if (next && next.classList.contains('platform-btn')) next.focus();
+							}
+							if (e.key === 'Enter' || e.key === ' ') {
+								e.preventDefault();
+								setPlatform(btn.dataset.platform);
+							}
+						});
+					});
+
+					// Initialize from localStorage or default to windows
+					const saved = (function () { try { return localStorage.getItem(KEY); } catch (e) { return null; } })();
+					setPlatform(saved === 'ios' ? 'ios' : 'windows');
+				})();
+			</script>
+
+		</section>
+	</div>
+	<footer>
+		&copy; 2025 winmac924. All rights reserved.
+	</footer>
+</body>
+
+</html>
