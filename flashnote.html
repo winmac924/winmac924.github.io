@@ -30,12 +30,10 @@
 		<section>
 			<h2>ダウンロード</h2>
 			<p>
-				<a
-					href="https://apps.apple.com/us/app/%E3%83%95%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%83%8E%E3%83%BC%E3%83%88-%E6%9A%97%E8%A8%98%E3%82%A2%E3%83%97%E3%83%AA/id6745518841"><img
-						src="img/flashnote/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg" alt="App Storeでダウンロード"
-						style="width: 200px; height: auto;" /></a>
-				<a href="https://github.com/winmac924/Flashnote_MAUI/releases/download/v2.3.2/Flashnote_MAUI.exe"><img
-						src="img/flashnote/GitHub_Logo.png" alt="" style="width: 200px; height: auto;"></a><br>
+				<a href="https://apps.apple.com/us/app/%E3%83%95%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%83%8E%E3%83%BC%E3%83%88-%E6%9A%97%E8%A8%98%E3%82%A2%E3%83%97%E3%83%AA/id6745518841"><img class="badge"
+							src="img/flashnote/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg" alt="App Storeでダウンロード" /></a>
+					<a href="https://github.com/winmac924/Flashnote_MAUI/releases/download/v2.3.2/Flashnote_MAUI.exe"><img class="badge"
+							src="img/flashnote/GitHub_Logo.png" alt="GitHub リリースリンク"></a><br>
 			<ul>
 				<h3>「Flashnote_MAUI.exeは一般的にダウンロードされていません」と表示される</h3>
 				<li>ポップアップの「・・・」をクリックする。</li>
@@ -76,7 +74,7 @@
 					<h4>カードの追加</h4>
 
 					<ol>
-						<h5>基本・穴埋めカード作成</h5>
+						<h4>基本・穴埋めカード作成</h4>
 						<li>カードを作成するには表・裏にテキストを入力します。<br>裏面の入力をスキップすることができます。</li>
 						<li>穴埋めカードを作成する際は「（）」ボタンを押すか、<code>CTRL+K</code>を押します。<br>
 							手入力をする場合は<code>&lt;&lt;blank|穴抜きしたい文字&gt;&gt;</code>を入力します。</li>
@@ -84,20 +82,35 @@
 						<li>「保存」ボタンをクリックしてカードを保存します。</li>
 					</ol>
 					<ol>
-						<h5>文字装飾</h5>
+						<h4>文字装飾</h4>
 						<li>
-							文字装飾には以下のマークダウン記法を使用します。<br>
-							これらにはすべてショートカットが割り当てられています。(後述)<br>
+							文字装飾には上部にあるボタンを選択するか、以下のショートカットキーを使用します。<br>
+							<img class="screenshot" src="img/flashnote/Screenshot 2025-10-06 130820.png" alt="ツールバーのスクリーンショット">
+							<br>
+							<ul>
+								<li><code>CTRL+B</code> → <strong>太字</strong></li>
+								<li><code>CTRL+K</code> → &lt;&lt;blank|穴抜きしたい文字&gt;&gt;</li>
+								<li><code>CTRL+R</code> → <span style="color: red;">赤字</span></li>
+								<li><code>CTRL+L</code> → <span style="color: blue;">青字</span></li>
+							</ul>
+						</li>
+						<br>
+						<li>
+							文字装飾には以下のマークダウン記法を使用しています。<br>
+							手入力をして、文字装飾を追加することも可能です。<br>
+
 							<ul>
 								<li><code>**太字**</code> → <strong>太字</strong></li>
 								<li><code>{{red|赤字}}</code> → <span style="color: red;">赤字</span></li>
 								<li><code>{{blue|青字}}</code> → <span style="color: blue;">青字</span></li>
 								<li><code>{{green|緑字}}</code> → <span style="color: green;">緑字</span></li>
-								<li><code>{{yellow|黄字}}</code> → <span style="color: yellow;">黄字</span></li>
+								<li><code>{{yellow|黄字}}</code> → <span style="color: rgb(255, 255, 183); background-color: rgb(160, 160, 160);">黄字</span></li>
 								<li><code>{{purple|紫字}}</code> → <span style="color: purple;">紫字</span></li>
 								<li><code>{{orange|橙字}}</code> → <span style="color: orange;">橙字</span></li>
-								<li><code>x^2^^</code> → x<span style="font-size: 0.7em; vertical-align: super;">2</span></li>
-								<li><code>CO~~2~~</code> → CO<span style="font-size: 0.7em; vertical-align: sub;">2</span></li>
+								<li><code>x^^2^^</code> → x<span
+										style="font-size: 0.7em; vertical-align: super;">2</span></li>
+								<li><code>CO~~2~~</code> → CO<span
+										style="font-size: 0.7em; vertical-align: sub;">2</span></li>
 								<li><code>&lt;&lt;blank|穴抜きしたい文字&gt;&gt;</code> → 裏面表示前：()、解答表示押下後：（穴抜きしたい文字）</li>
 							</ul>
 						</li>
