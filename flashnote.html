@@ -58,7 +58,7 @@
 			<h2>使い方</h2>
 			<div class="platform-toggle" role="tablist" aria-label="プラットフォーム切替">
 				<button class="platform-btn active" data-platform="windows" aria-pressed="true">Windows版</button>
-				<button class="platform-btn" data-platform="ios" aria-pressed="false">iOS版</button>
+				<button class="platform-btn" data-platform="ios" aria-pressed="false">iPhone•iPad版</button>
 			</div>
 			<div class="platform-contents">
 				<article class="platform-content" data-platform="windows">
@@ -67,9 +67,7 @@
 					<ol>
 						<li>アプリを起動して、左下の「+」ボタンからノートを作成します。</li>
 						<li>ノートにタイトルを付けて、「OK」ボタンを押します。</li>
-
-						<li>クラウド同期を有効にする場合は、設定からサインインしてください。</li>
-						<li>検索バーやフォルダ機能でカードを整理・検索できます。</li>
+						<li>フォルダ機能でノートを整理・検索できます。</li>
 					</ol>
 					<h4>カードの追加</h4>
 
@@ -98,7 +96,6 @@
 						<li>
 							文字装飾には以下のマークダウン記法を使用しています。<br>
 							手入力をして、文字装飾を追加することも可能です。<br>
-
 							<ul>
 								<li><code>**太字**</code> → <strong>太字</strong></li>
 								<li><code>{{red|赤字}}</code> → <span style="color: red;">赤字</span></li>
@@ -117,8 +114,35 @@
 					</ol>
 				</article>
 				<article class="platform-content hidden" data-platform="ios">
-					<h3>iOS版 の使い方</h3>
+					<h3>iPhone•iPad版の使い方</h3>
+					<p>＊Apple Silicon(Mシリーズ)搭載のMacでも動作はしますが、すべての動作において保証はできません。</p>
+					<h4>ノートの新規作成</h4>
 					<ol>
+							<li>アプリを起動して、右上の「+」ボタンからノートを作成します。</li>
+							<li>ノートを選択し、タイトルを付けて、「OK」ボタンを押します。</li>
+							<li>フォルダ機能でノートを整理・検索できます。</li>
+						<h4>共有されたノートを追加する</h4>
+							<li></li>
+					</ol>
+					<ol>
+						<li>
+							文字装飾には以下のマークダウン記法を使用しています。<br>
+							手入力をして、文字装飾を追加することも可能です。<br>
+							<ul>
+								<li><code>**太字**</code> → <strong>太字</strong></li>
+								<li><code>{{red|赤字}}</code> → <span style="color: red;">赤字</span></li>
+								<li><code>{{blue|青字}}</code> → <span style="color: blue;">青字</span></li>
+								<li><code>{{green|緑字}}</code> → <span style="color: green;">緑字</span></li>
+								<li><code>{{yellow|黄字}}</code> → <span style="color: rgb(255, 255, 183); background-color: rgb(160, 160, 160);">黄字</span></li>
+								<li><code>{{purple|紫字}}</code> → <span style="color: purple;">紫字</span></li>
+								<li><code>{{orange|橙字}}</code> → <span style="color: orange;">橙字</span></li>
+								<li><code>x^^2^^</code> → x<span
+										style="font-size: 0.7em; vertical-align: super;">2</span></li>
+								<li><code>CO~~2~~</code> → CO<span
+										style="font-size: 0.7em; vertical-align: sub;">2</span></li>
+								<li><code>&lt;&lt;blank|穴抜きしたい文字&gt;&gt;</code> → 裏面表示前：()、解答表示押下後：（穴抜きしたい文字）</li>
+							</ul>
+						</li>
 					</ol>
 				</article>
 			</div>
